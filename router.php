@@ -17,5 +17,7 @@ function route(string $path, string $method, array $callback): void {
 require_once __DIR__ . '/lib/Routes/oauth_routes.php';
 require_once __DIR__ . '/lib/Routes/view_routes.php';
 require_once __DIR__ . '/lib/Routes/app_routes.php';
+require_once __DIR__ . '/lib/Routes/api_v2_routes.php';
+require_once __DIR__ . '/lib/Routes/api_v3_routes.php';
 
 $klein->dispatch();
