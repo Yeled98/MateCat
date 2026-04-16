@@ -67,6 +67,9 @@ abstract class BaseKleinViewController extends AbstractStatefulKleinController i
      */
     public function setView(string $template_name, array $params = [], int $code = 200): void
     {
+        $params["lexiqa_languages"] = "[]";
+        $params["lexiqa_enabled"] = "false";
+        $params["isGDriveConfigured"] = "true";
         $this->view = new PHPTALWithAppend(AppConfig::$TEMPLATE_ROOT . "/$template_name");
         $this->httpCode = $code;
 

@@ -10,7 +10,7 @@ use Utils\Constants\Mime2Extension;
 class AppConfig
 {
 
-    public static array $MANDATORY_KEYS = [
+    public static $MANDATORY_KEYS = [
         'ENV',
         'DB_SERVER',
         'DB_DATABASE',
@@ -39,35 +39,35 @@ class AppConfig
      * @see EnvWrap
      *
      */
-    public static ?string $ENV = null;
+    public static $ENV = null;
 
     /**
      * Indicates whether the current instance is running as a daemon process.
      */
-    public static bool $IS_DAEMON_INSTANCE = false;
+    public static $IS_DAEMON_INSTANCE = false;
 
-    public static string $ROOT;
-    public static string $BASEURL;
-    public static string $HTTPHOST;
-    public static string $CLI_HTTP_HOST;
-    public static string $COOKIE_DOMAIN;
-    public static string $PHP_SESSION_NAME = 'PHPSESSID';
-    public static int $AJAX_DOMAINS = 100;
-    public static string $PROTOCOL = 'https';
-    public static bool $DEBUG = false;
-    public static bool $PRINT_ERRORS = false;
-    public static ?string $DB_SERVER = null;
-    public static ?string $DB_DATABASE = null;
-    public static ?string $DB_USER = null;
-    public static ?string $DB_PASS = null;
-    public static int $INSTANCE_ID = 0;
-    public static string $REDIS_SERVERS = '';
-    public static string $QUEUE_BROKER_ADDRESS;
-    public static string $QUEUE_JMX_ADDRESS;
-    public static string $QUEUE_CREDENTIALS;
+    public static $ROOT;
+    public static $BASEURL;
+    public static $HTTPHOST;
+    public static $CLI_HTTP_HOST;
+    public static $COOKIE_DOMAIN;
+    public static $PHP_SESSION_NAME = 'PHPSESSID';
+    public static $AJAX_DOMAINS = 100;
+    public static $PROTOCOL = 'https';
+    public static $DEBUG = false;
+    public static $PRINT_ERRORS = false;
+    public static $DB_SERVER = null;
+    public static $DB_DATABASE = null;
+    public static $DB_USER = null;
+    public static $DB_PASS = null;
+    public static $INSTANCE_ID = 0;
+    public static $REDIS_SERVERS = '';
+    public static $QUEUE_BROKER_ADDRESS;
+    public static $QUEUE_JMX_ADDRESS;
+    public static $QUEUE_CREDENTIALS;
 
-    public static bool $ENABLE_MULTI_DOMAIN_API = false;
-    public static string $XSRF_TOKEN = 'Xsrf-Token';
+    public static $ENABLE_MULTI_DOMAIN_API = false;
+    public static $XSRF_TOKEN = 'Xsrf-Token';
 
     /**
      * Use or not the js tracking codes macro import (Ex: Google Analytics code injection)
@@ -76,62 +76,62 @@ class AppConfig
      *
      * @var string Customized path for the tracking codes (empty default: lib/View)
      */
-    public static string $TRACKING_CODES_VIEW_PATH = "";
+    public static $TRACKING_CODES_VIEW_PATH = "";
 
-    public static bool $COMMENTS_ENABLED = true;
-    public static string $SOCKET_NOTIFICATIONS_QUEUE_NAME = "/queue/matecat_socket_notifications";
-    public static string $SOCKET_BASE_URL = '';
+    public static $COMMENTS_ENABLED = true;
+    public static $SOCKET_NOTIFICATIONS_QUEUE_NAME = "/queue/matecat_socket_notifications";
+    public static $SOCKET_BASE_URL = '';
 
-    public static ?string $SMTP_HOST = null;
+    public static $SMTP_HOST = null;
     public static ?int $SMTP_PORT = null;
-    public static ?string $SMTP_SENDER = null;
-    public static ?string $SMTP_HOSTNAME = null;
+    public static $SMTP_SENDER = null;
+    public static $SMTP_HOSTNAME = null;
 
-    public static string $MAILER_FROM_NAME = 'Matecat';
-    public static string $MAILER_RETURN_PATH = 'no-reply@matecat.com';
+    public static $MAILER_FROM_NAME = 'Matecat';
+    public static $MAILER_RETURN_PATH = 'no-reply@matecat.com';
 
-    public static ?string $LOG_REPOSITORY = null;
-    public static ?string $STORAGE_DIR = null;
-    public static string $UPLOAD_REPOSITORY;
-    public static string $FILES_REPOSITORY;
-    public static string $CACHE_REPOSITORY;
-    public static string $ZIP_REPOSITORY;
-    public static string $ANALYSIS_FILES_REPOSITORY;
-    public static string $QUEUE_PROJECT_REPOSITORY;
-    public static string $CONVERSION_ERRORS_REPOSITORY;
-    public static string $TMP_DOWNLOAD;
-    public static string $TEMPLATE_ROOT;
-    public static string $UTILS_ROOT;
-    public static int $DEFAULT_NUM_RESULTS_FROM_TM = 10;
-    public static string $AUTHSECRET;
-    public static string $AUTHSECRET_PATH;
+    public static $LOG_REPOSITORY = null;
+    public static $STORAGE_DIR = null;
+    public static $UPLOAD_REPOSITORY;
+    public static $FILES_REPOSITORY;
+    public static $CACHE_REPOSITORY;
+    public static $ZIP_REPOSITORY;
+    public static $ANALYSIS_FILES_REPOSITORY;
+    public static $QUEUE_PROJECT_REPOSITORY;
+    public static $CONVERSION_ERRORS_REPOSITORY;
+    public static $TMP_DOWNLOAD;
+    public static $TEMPLATE_ROOT;
+    public static $UTILS_ROOT;
+    public static $DEFAULT_NUM_RESULTS_FROM_TM = 10;
+    public static $AUTHSECRET;
+    public static $AUTHSECRET_PATH;
 
-    public static bool $FORCE_XLIFF_CONVERSION = false;
-    public static bool $FILTERS_OCR_CHECK = true;
-    public static bool $VOLUME_ANALYSIS_ENABLED = true;
-    public static int $WARNING_POLLING_INTERVAL = 20; //seconds
-    public static int $SEGMENT_QA_CHECK_INTERVAL = 1; //seconds
-    public static string $AUTHCOOKIENAME = 'matecat_login_v6';
-    public static string $SUPPORT_MAIL = 'the owner of this MateCat instance.';//the default string is 'the owner of this Matecat instance'
-    public static int $ANALYSIS_WORDS_PER_DAYS = 3000;
-    public static int $AUTHCOOKIEDURATION = 86400 * 7;        // 24 hours
-    public static int $MAX_UPLOAD_FILE_SIZE = 62914560;     // 60 * 1024 * 1024 // bytes
-    public static int $MAX_UPLOAD_TMX_FILE_SIZE = 314572800;    // 300 * 1024 * 1024 // bytes
-    public static int $MAX_NUM_FILES = 100;
-    public static int $MAX_SOURCE_WORDS = 250000;
+    public static $FORCE_XLIFF_CONVERSION = false;
+    public static $FILTERS_OCR_CHECK = true;
+    public static $VOLUME_ANALYSIS_ENABLED = true;
+    public static $WARNING_POLLING_INTERVAL = 20; //seconds
+    public static $SEGMENT_QA_CHECK_INTERVAL = 1; //seconds
+    public static $AUTHCOOKIENAME = 'matecat_login_v6';
+    public static $SUPPORT_MAIL = 'the owner of this MateCat instance.';//the default string is 'the owner of this Matecat instance'
+    public static $ANALYSIS_WORDS_PER_DAYS = 3000;
+    public static $AUTHCOOKIEDURATION = 86400 * 7;        // 24 hours
+    public static $MAX_UPLOAD_FILE_SIZE = 62914560;     // 60 * 1024 * 1024 // bytes
+    public static $MAX_UPLOAD_TMX_FILE_SIZE = 314572800;    // 300 * 1024 * 1024 // bytes
+    public static $MAX_NUM_FILES = 100;
+    public static $MAX_SOURCE_WORDS = 250000;
 
-    public static string $GEMINI_API_KEY = '';
-    public static string $GEMINI_API_MODEL = '';
+    public static $GEMINI_API_KEY = '';
+    public static $GEMINI_API_MODEL = '';
 
-    public static int $GEMINI_TIMEOUT = 30; //seconds
+    public static $GEMINI_TIMEOUT = 30; //seconds
 
     /**
      * OPENAI configuration
      */
-    public static string $OPENAI_API_KEY = '';
-    public static string $OPEN_AI_MODEL = '';
-    public static int $OPEN_AI_TIMEOUT = 30; //seconds
-    public static string $OPEN_AI_MAX_TOKENS = '';
+    public static $OPENAI_API_KEY = '';
+    public static $OPEN_AI_MODEL = '';
+    public static $OPEN_AI_TIMEOUT = 30; //seconds
+    public static $OPEN_AI_MAX_TOKENS = '';
 
     /**
      * We propose that lxq_server is in a configuration file
@@ -141,19 +141,19 @@ class AppConfig
      * @see http://www.lexiqa.net
      *
      */
-    public static ?string $LXQ_LICENSE = null;
-    public static string $LXQ_SERVER = "https://backend.lexiqa.net";
+    public static $LXQ_LICENSE = null;
+    public static $LXQ_SERVER = "https://backend.lexiqa.net";
     /**
      * Your partnerId will be provided along with your
      * @see http://www.lexiqa.net
      *
      */
-    public static ?string $LXQ_PARTNERID = null;
+    public static $LXQ_PARTNERID = null;
     /**
      * Time zone string that should match the one set in the database.
      * @var string
      */
-    public static string $TIME_ZONE = 'Europe/Rome';
+    public static $TIME_ZONE = 'Europe/Rome';
 
     /**
      * Use this setting to indicate the upperbound memory limit you want to
@@ -161,7 +161,7 @@ class AppConfig
      * big files.
      * @var string|null memory limit. Example "2048M"
      */
-    public static ?string $FAST_ANALYSIS_MEMORY_LIMIT = null;
+    public static $FAST_ANALYSIS_MEMORY_LIMIT = null;
 
     /**
      * Default Matecat user agent string
@@ -177,44 +177,44 @@ class AppConfig
      * In short: please turn it off only if strictly necessary :)
      * @var bool
      */
-    public static bool $ENABLE_OUTSOURCE = true;
+    public static $ENABLE_OUTSOURCE = true;
 
     /**
      * MateCat Filters configuration
      */
-    public static string $FILTERS_USER_AGENT = "MateCat Community Instance";
-    public static string $FILTERS_ADDRESS = "https://translated-matecat-filters-v1.p.rapidapi.com";
-    public static string $FILTERS_RAPIDAPI_KEY = "https://rapidapi.com/translated/api/matecat-filters to obtain your RapidAPI Key";
-    public static bool $FILTERS_SOURCE_TO_XLIFF_FORCE_VERSION = false;
-    public static bool $FILTERS_EMAIL_FAILURES = false;
+    public static $FILTERS_USER_AGENT = "MateCat Community Instance";
+    public static $FILTERS_ADDRESS = "https://translated-matecat-filters-v1.p.rapidapi.com";
+    public static $FILTERS_RAPIDAPI_KEY = "https://rapidapi.com/translated/api/matecat-filters to obtain your RapidAPI Key";
+    public static $FILTERS_SOURCE_TO_XLIFF_FORCE_VERSION = false;
+    public static $FILTERS_EMAIL_FAILURES = false;
 
     /**
      * The MateCat Version
      */
-    public static string $BUILD_NUMBER = '';
+    public static $BUILD_NUMBER = '';
 
     /**
      * MyMemory Developer email Key for the cattool
      * @var string
      */
-    public static string $MYMEMORY_API_KEY = 'demo@matecat.com';
+    public static $MYMEMORY_API_KEY = 'demo@matecat.com';
 
     /**
      * MyMemory Developer email Key for the analysis
      * @var string
      */
-    public static string $MYMEMORY_TM_API_KEY = 'tmanalysis@matecat.com';
+    public static $MYMEMORY_TM_API_KEY = 'tmanalysis@matecat.com';
 
     /**
      * Default key used to call the TM Server on an Import TMX panel
      * @var string
      */
-    public static string $DEFAULT_TM_KEY = '';
+    public static $DEFAULT_TM_KEY = '';
 
     /**
      * @var string The default MMT license is applied when Lara falls back for unsupported languages and the user doesn't add their personal MMT license.
      */
-    public static string $DEFAULT_MMT_KEY = '';
+    public static $DEFAULT_MMT_KEY = '';
 
     /**
      * Holds the value of the LARA pre-shared key.
@@ -223,7 +223,7 @@ class AppConfig
      *
      * @var string
      */
-    public static string $LARA_PRE_SHARED_KEY_HEADER = ''; //TODO: to be removed when Lara will read directly from the internal queue
+    public static $LARA_PRE_SHARED_KEY_HEADER = ''; //TODO: to be removed when Lara will read directly from the internal queue
 
     /**
      * If you don't have a client id and client secret, please visit
@@ -259,70 +259,70 @@ class AppConfig
      *
      * Done.
      */
-    public static array $OAUTH_CONFIG = [];
+    public static $OAUTH_CONFIG = [];
 
     /**
      * Google credentials
      */
-    public static ?string $GOOGLE_OAUTH_CLIENT_ID = null;
-    public static ?string $GOOGLE_OAUTH_CLIENT_SECRET = null;
-    public static ?string $GOOGLE_OAUTH_CLIENT_APP_NAME = null;
-    public static ?string $GOOGLE_OAUTH_REDIRECT_URL = null;
-    public static ?string $GOOGLE_OAUTH_BROWSER_API_KEY = null;
+    public static $GOOGLE_OAUTH_CLIENT_ID = null;
+    public static $GOOGLE_OAUTH_CLIENT_SECRET = null;
+    public static $GOOGLE_OAUTH_CLIENT_APP_NAME = null;
+    public static $GOOGLE_OAUTH_REDIRECT_URL = null;
+    public static $GOOGLE_OAUTH_BROWSER_API_KEY = null;
 
     /**
      * GitHub credentials
      */
-    public static ?string $GITHUB_OAUTH_CLIENT_ID = null;
-    public static ?string $GITHUB_OAUTH_CLIENT_SECRET = null;
-    public static ?string $GITHUB_OAUTH_REDIRECT_URL = null;
+    public static $GITHUB_OAUTH_CLIENT_ID = null;
+    public static $GITHUB_OAUTH_CLIENT_SECRET = null;
+    public static $GITHUB_OAUTH_REDIRECT_URL = null;
 
     /**
      * Linkedin credentials
      */
-    public static ?string $LINKEDIN_OAUTH_CLIENT_ID = null;
-    public static ?string $LINKEDIN_OAUTH_CLIENT_SECRET = null;
-    public static ?string $LINKEDIN_OAUTH_REDIRECT_URL = null;
+    public static $LINKEDIN_OAUTH_CLIENT_ID = null;
+    public static $LINKEDIN_OAUTH_CLIENT_SECRET = null;
+    public static $LINKEDIN_OAUTH_REDIRECT_URL = null;
 
     /**
      * Microsoft credentials
      */
-    public static ?string $MICROSOFT_OAUTH_CLIENT_ID = null;
-    public static ?string $MICROSOFT_OAUTH_CLIENT_SECRET = null;
-    public static ?string $MICROSOFT_OAUTH_REDIRECT_URL = null;
+    public static $MICROSOFT_OAUTH_CLIENT_ID = null;
+    public static $MICROSOFT_OAUTH_CLIENT_SECRET = null;
+    public static $MICROSOFT_OAUTH_REDIRECT_URL = null;
 
     /**
      * Facebook credentials
      */
-    public static ?string $FACEBOOK_OAUTH_CLIENT_ID = null;
-    public static ?string $FACEBOOK_OAUTH_CLIENT_SECRET = null;
-    public static ?string $FACEBOOK_OAUTH_REDIRECT_URL = null;
+    public static $FACEBOOK_OAUTH_CLIENT_ID = null;
+    public static $FACEBOOK_OAUTH_CLIENT_SECRET = null;
+    public static $FACEBOOK_OAUTH_REDIRECT_URL = null;
 
-    public static bool $SKIP_SQL_CACHE = false;
+    public static $SKIP_SQL_CACHE = false;
 
     /**
      * FileStorage Configuration: [s3|fs]
      */
-    public static string $FILE_STORAGE_METHOD = '';
+    public static $FILE_STORAGE_METHOD = '';
 
     /**
      * S3FilesStorage Configuration
      */
-    public static ?string $AWS_ACCESS_KEY_ID = null;
-    public static ?string $AWS_SECRET_KEY = null;
-    public static ?string $AWS_VERSION = null;
-    public static ?string $AWS_REGION = null;
-    public static bool $AWS_SSL_VERIFY = false;
-    public static bool $AWS_CACHING = false;
-    public static string $AWS_STORAGE_BASE_BUCKET;
+    public static $AWS_ACCESS_KEY_ID = null;
+    public static $AWS_SECRET_KEY = null;
+    public static $AWS_VERSION = null;
+    public static $AWS_REGION = null;
+    public static $AWS_SSL_VERIFY = false;
+    public static $AWS_CACHING = false;
+    public static $AWS_STORAGE_BASE_BUCKET;
 
     /**
      * Logging configuration
      */
-    public static array $MONOLOG_HANDLERS = [];
+    public static $MONOLOG_HANDLERS = [];
 
-    public static string $REPLACE_HISTORY_DRIVER = '';
-    public static int $REPLACE_HISTORY_TTL = 0;
+    public static $REPLACE_HISTORY_DRIVER = '';
+    public static $REPLACE_HISTORY_TTL = 0;
 
     private static ?AppConfig $MYSELF = null;
 
@@ -449,7 +449,7 @@ class AppConfig
         self::$MIME_TYPES = Mime2Extension::getMimeTypes();
     }
 
-    public static array $SUPPORTED_FILE_TYPES = [
+    public static $SUPPORTED_FILE_TYPES = [
         'Office' => [
             'pages' => ['', '', 'extdoc'],
             'doc' => ['', '', 'extdoc'],
@@ -548,7 +548,7 @@ class AppConfig
         ]
     ];
 
-    public static array $MIME_TYPES = [];
+    public static $MIME_TYPES = [];
 
     /*
      * The maximum filename length accepted.
@@ -556,17 +556,17 @@ class AppConfig
      * During the execution, a hash string can be prepended to the filename.
      * So we reserve 45 chars for internal purposes.
      */
-    public static int $MAX_FILENAME_LENGTH = 210;
+    public static $MAX_FILENAME_LENGTH = 210;
 
-    public static array $AUTOLOAD_PLUGINS = ["second_pass_review"];
+    public static $AUTOLOAD_PLUGINS = ["second_pass_review"];
 
     /**
      * Definitions for the asynchronous task runner
      * @var array
      */
-    public static array $TASK_RUNNER_CONFIG = [];
+    public static $TASK_RUNNER_CONFIG = [];
 
-    public static bool $SEND_ERR_MAIL_REPORT = true;
+    public static $SEND_ERR_MAIL_REPORT = true;
 
     /**
      * Initialize the Class Instance
