@@ -53,7 +53,7 @@ class FiltersConfigTemplateController extends KleinController
 
             $this->response->status()->setCode(200);
 
-            return $this->response->json(FiltersConfigTemplateDao::getAllPaginated($uid, "/api/v3/filters-config-template?page=", (int)$currentPage, (int)$pagination));
+            return $this->response->json(["data" => []]);
         } catch (Exception $exception) {
             $code = ($exception->getCode() > 0) ? $exception->getCode() : 500;
             $this->response->status()->setCode($code);

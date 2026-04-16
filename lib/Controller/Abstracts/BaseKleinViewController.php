@@ -30,7 +30,6 @@ use Utils\Tools\Utils;
 abstract class BaseKleinViewController extends AbstractStatefulKleinController implements IController
 {
 
-    protected bool $isView = true;
 
     /**
      * @var PHPTALWithAppend
@@ -53,6 +52,8 @@ abstract class BaseKleinViewController extends AbstractStatefulKleinController i
     public function __construct(Request $request, Response $response, ?ServiceProvider $service = null, ?App $app = null)
     {
         parent::__construct($request, $response, $service, $app);
+        $this->isView = true;
+        $this->isView = true;
         $this->timingLogFileName = 'view_controller_calls_time.log';
         $this->appendValidator(new MandatoryKeysValidator($this));
     }

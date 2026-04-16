@@ -66,3 +66,21 @@
 {"level":"info","message":["Master started"],"timestamp":"2026-04-16T05:34:56.922Z","worker_id":"primary"}
 {"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T05:34:57.188Z","worker_id":"1"}
 {"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T05:34:57.192Z","worker_id":"1"}
+{"level":"info","message":["*** Master: SIGINT received ***"],"timestamp":"2026-04-16T18:44:23.927Z","worker_id":"primary"}
+{"level":"info","message":["SIGINT received..."],"timestamp":"2026-04-16T18:44:23.927Z","worker_id":"1"}
+{"level":"info","message":["Disconnecting clients...",{"payload":{"_type":"upgrade"}}],"timestamp":"2026-04-16T18:44:23.928Z","worker_id":"1"}
+{"level":"info","message":"Exit...","timestamp":"2026-04-16T18:44:24.931Z","worker_id":"1"}
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T18:44:25.959Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788//channel/updates"],"timestamp":"2026-04-16T18:44:25.960Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T18:44:25.963Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T18:44:26.260Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T18:44:26.263Z","worker_id":"1"}
+{"level":"info","message":["SIGINT received..."],"timestamp":"2026-04-16T19:09:11.338Z","worker_id":"1"}
+{"level":"info","message":["*** Master: SIGINT received ***"],"timestamp":"2026-04-16T19:09:11.337Z","worker_id":"primary"}
+{"level":"info","message":["Disconnecting clients...",{"payload":{"_type":"upgrade"}}],"timestamp":"2026-04-16T19:09:11.339Z","worker_id":"1"}
+{"level":"info","message":"Exit...","timestamp":"2026-04-16T19:09:12.342Z","worker_id":"1"}
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T19:09:13.361Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788//channel/updates"],"timestamp":"2026-04-16T19:09:13.362Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T19:09:13.365Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T19:09:13.661Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T19:09:13.664Z","worker_id":"1"}

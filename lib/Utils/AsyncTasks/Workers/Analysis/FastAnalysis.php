@@ -106,7 +106,7 @@ class FastAnalysis extends AbstractDaemon
         }
     }
 
-    protected function __construct(string $configFile, ?string $contextIndex = null)
+    protected function __construct(?string $configFile, ?string $contextIndex = null)
     {
         parent::__construct();
 

@@ -23,14 +23,14 @@ class Configuration
     private array $__raw;
 
     /**
-     * @param string $rawConfig
+     * @param ?string $rawConfig
      * @param string|null $contextIndex
      *
      * @throws Exception
      */
-    public function __construct(string $rawConfig, ?string $contextIndex = null)
+    public function __construct(?string $rawConfig, ?string $contextIndex = null)
     {
-        $config = @parse_ini_file($rawConfig, true);
+        $config = empty($rawConfig) ? false : @parse_ini_file($rawConfig, true);
 
         if (empty($rawConfig) || empty($config['context_definitions'])) {
             throw new Exception('Wrong configuration file provided.');

@@ -56,7 +56,7 @@ abstract class AbstractDaemon
     /**
      * @var string
      */
-    protected string $_configFile;
+    protected ?string $_configFile;
 
     /**
      * Optional context index on which the task runner works
@@ -85,7 +85,7 @@ abstract class AbstractDaemon
      *
      * @throws Exception
      */
-    protected function __construct(string $configFile = null, ?string $contextIndex = null)
+    protected function __construct(?string $configFile = null, ?string $contextIndex = null)
     {
         AppConfig::$PRINT_ERRORS = true;
         $this->myProcessPid = posix_getpid();
