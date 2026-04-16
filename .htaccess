@@ -29,7 +29,9 @@ RewriteRule !.(css|fonts|gif|jpe?g?|png|ico|js|svg|woff|ttf|map)$ router.php [QS
 RedirectMatch 404 ^/\.git
 RedirectMatch 404 ^/vendor
 RedirectMatch 404 ^/storage
-
+RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /index.php [L,QSA]
 </IfModule>
 
 ErrorDocument 401 /lib/View/401.html

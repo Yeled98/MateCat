@@ -1,0 +1,68 @@
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T04:50:06.016Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788//channel/updates"],"timestamp":"2026-04-16T04:50:06.017Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T04:50:06.021Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T04:50:06.294Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T04:50:06.299Z","worker_id":"1"}
+{"level":"info","message":["*** Master: SIGINT received ***"],"timestamp":"2026-04-16T04:53:23.343Z","worker_id":"primary"}
+{"level":"info","message":["SIGINT received..."],"timestamp":"2026-04-16T04:53:23.343Z","worker_id":"1"}
+{"level":"info","message":["Disconnecting clients...",{"payload":{"_type":"upgrade"}}],"timestamp":"2026-04-16T04:53:23.344Z","worker_id":"1"}
+{"level":"info","message":"Exit...","timestamp":"2026-04-16T04:53:24.348Z","worker_id":"1"}
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T04:53:25.346Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788/channel/updates"],"timestamp":"2026-04-16T04:53:25.347Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T04:53:25.353Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T04:53:25.624Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T04:53:25.628Z","worker_id":"1"}
+{"level":"info","message":["SIGINT received..."],"timestamp":"2026-04-16T04:55:38.624Z","worker_id":"1"}
+{"level":"info","message":["*** Master: SIGINT received ***"],"timestamp":"2026-04-16T04:55:38.624Z","worker_id":"primary"}
+{"level":"info","message":["Disconnecting clients...",{"payload":{"_type":"upgrade"}}],"timestamp":"2026-04-16T04:55:38.625Z","worker_id":"1"}
+{"level":"info","message":"Exit...","timestamp":"2026-04-16T04:55:39.628Z","worker_id":"1"}
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T04:55:40.631Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788/channel/updates"],"timestamp":"2026-04-16T04:55:40.631Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T04:55:40.634Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T04:55:40.914Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T04:55:40.919Z","worker_id":"1"}
+{"level":"info","message":["*** Master: SIGINT received ***"],"timestamp":"2026-04-16T05:02:42.595Z","worker_id":"primary"}
+{"level":"info","message":["SIGINT received..."],"timestamp":"2026-04-16T05:02:42.595Z","worker_id":"1"}
+{"level":"info","message":["Disconnecting clients...",{"payload":{"_type":"upgrade"}}],"timestamp":"2026-04-16T05:02:42.596Z","worker_id":"1"}
+{"level":"info","message":"Exit...","timestamp":"2026-04-16T05:02:43.599Z","worker_id":"1"}
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T05:02:44.607Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788//sse/channel/updates"],"timestamp":"2026-04-16T05:02:44.608Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T05:02:44.611Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T05:02:44.892Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T05:02:44.896Z","worker_id":"1"}
+{"level":"info","message":["*** Master: SIGINT received ***"],"timestamp":"2026-04-16T05:06:39.222Z","worker_id":"primary"}
+{"level":"info","message":["SIGINT received..."],"timestamp":"2026-04-16T05:06:39.222Z","worker_id":"1"}
+{"level":"info","message":["Disconnecting clients...",{"payload":{"_type":"upgrade"}}],"timestamp":"2026-04-16T05:06:39.223Z","worker_id":"1"}
+{"level":"info","message":"Exit...","timestamp":"2026-04-16T05:06:40.226Z","worker_id":"1"}
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T05:06:41.265Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788//channel/updates"],"timestamp":"2026-04-16T05:06:41.266Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T05:06:41.270Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T05:06:41.541Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T05:06:41.545Z","worker_id":"1"}
+{"level":"info","message":["*** Master: SIGINT received ***"],"timestamp":"2026-04-16T05:11:19.108Z","worker_id":"primary"}
+{"level":"info","message":["SIGINT received..."],"timestamp":"2026-04-16T05:11:19.108Z","worker_id":"1"}
+{"level":"info","message":["Disconnecting clients...",{"payload":{"_type":"upgrade"}}],"timestamp":"2026-04-16T05:11:19.109Z","worker_id":"1"}
+{"level":"info","message":"Exit...","timestamp":"2026-04-16T05:11:20.112Z","worker_id":"1"}
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T05:11:21.149Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788//channel/updates"],"timestamp":"2026-04-16T05:11:21.150Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T05:11:21.153Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T05:11:21.445Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T05:11:21.449Z","worker_id":"1"}
+{"level":"info","message":["*** Master: SIGINT received ***"],"timestamp":"2026-04-16T05:20:11.055Z","worker_id":"primary"}
+{"level":"info","message":["SIGINT received..."],"timestamp":"2026-04-16T05:20:11.055Z","worker_id":"1"}
+{"level":"info","message":["Disconnecting clients...",{"payload":{"_type":"upgrade"}}],"timestamp":"2026-04-16T05:20:11.055Z","worker_id":"1"}
+{"level":"info","message":"Exit...","timestamp":"2026-04-16T05:20:12.058Z","worker_id":"1"}
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T05:20:13.086Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788/sse"],"timestamp":"2026-04-16T05:20:13.087Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T05:20:13.090Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T05:20:13.386Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T05:20:13.390Z","worker_id":"1"}
+{"level":"info","message":["*** Master: SIGINT received ***"],"timestamp":"2026-04-16T05:34:54.921Z","worker_id":"primary"}
+{"level":"info","message":["SIGINT received..."],"timestamp":"2026-04-16T05:34:54.922Z","worker_id":"1"}
+{"level":"info","message":["Disconnecting clients...",{"payload":{"_type":"upgrade"}}],"timestamp":"2026-04-16T05:34:54.923Z","worker_id":"1"}
+{"level":"info","message":"Exit...","timestamp":"2026-04-16T05:34:55.926Z","worker_id":"1"}
+{"level":"info","message":["Server version 1.0.0"],"timestamp":"2026-04-16T05:34:56.918Z","worker_id":"primary"}
+{"level":"info","message":["Listening on //127.0.0.1:7788//channel/updates"],"timestamp":"2026-04-16T05:34:56.919Z","worker_id":"primary"}
+{"level":"info","message":["Master started"],"timestamp":"2026-04-16T05:34:56.922Z","worker_id":"primary"}
+{"level":"info","message":["Connecting redis for adapter started",null],"timestamp":"2026-04-16T05:34:57.188Z","worker_id":"1"}
+{"level":"info","message":["Worker started",1],"timestamp":"2026-04-16T05:34:57.192Z","worker_id":"1"}
