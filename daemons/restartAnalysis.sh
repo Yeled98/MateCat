@@ -1,4 +1,5 @@
 #!/bin/bash
+export MATECAT_HOME=/home/matecat/matecat
 
 ################
 #  DEPRECATED  #
@@ -6,9 +7,9 @@
 # Only for development environment
 
 
-export MATECAT_HOME="/var/www/matecat"
-task_config_path=/var/www/matecat/inc/task_manager_config.ini
-php_script_path=/var/www/matecat/daemons/
+export MATECAT_HOME="/home/matecat/matecat"
+task_config_path=/home/matecat/matecat/inc/task_manager_config.ini
+php_script_path=/home/matecat/matecat/daemons/
 
 DIR=$( cd "$( dirname "$0")" || exit; pwd )
 cd "${DIR}" || exit
