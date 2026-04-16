@@ -1,0 +1,10 @@
+{
+  "port": 7788,
+  "cors": {
+    "allowedOrigins": ["https://cat.gospeltranslations.ai"]
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379
+  }
+}
