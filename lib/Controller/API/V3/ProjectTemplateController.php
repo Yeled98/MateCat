@@ -93,7 +93,7 @@ class ProjectTemplateController extends KleinController
         try {
             // accept only JSON
             if (!$this->isJsonRequest()) {
-                throw new ValidationError('Bad Request');
+                return $this->response->json(["error" => "Error: Invalid unique template name"], 500);
             }
 
             $json = $this->request->body();
@@ -105,12 +105,15 @@ class ProjectTemplateController extends KleinController
 
             return $this->response->json($struct);
         } catch (JSONValidatorException $exception) {
-            throw new JSONValidatorException($exception->getFormattedError("project-template"));
-        } catch (PDOException $e) {
+            return $this->response->json(["error" => "Validación: " . $exception->getMessage()], 500);
+        } catch (\Throwable $e) {
+            return $this->response->json(["error" => "Critical Error: " . $e->getMessage()], 500);
+        }
+        catch (PDOException $e) {
             if ($e->getCode() == 23000) {
-                throw new ValidationError("Invalid unique template name");
+                return $this->response->json(["error" => "Error: Invalid unique template name"], 500);
             } else {
-                throw $e;
+                return $this->response->json(["error" => "Error DB: " . $e->getMessage()], 500);
             }
         }
     }
@@ -126,7 +129,7 @@ class ProjectTemplateController extends KleinController
         try {
             // accept only JSON
             if (!$this->isJsonRequest()) {
-                throw new ValidationError('Bad Request');
+                return $this->response->json(["error" => "Error: Invalid unique template name"], 500);
             }
 
             $id = (int)$this->request->param('id');
@@ -144,14 +147,14 @@ class ProjectTemplateController extends KleinController
             $model = ProjectTemplateDao::getByIdAndUser($id, $uid);
 
             if (empty($model)) {
-                throw new NotFoundException('Model not found');
+                return $this->response->json(["error" => "Error: Template not found"], 404);
             }
 
             $struct = ProjectTemplateDao::editFromJSON($model, $decodedObject, $id, $this->getUser());
 
             return $this->response->json($struct);
         } catch (JSONValidatorException $exception) {
-            throw new JSONValidatorException($exception->getFormattedError("project-template"));
+            return $this->response->json(["error" => "Validación: " . $exception->getMessage()], 500);
         }
     }
 
@@ -167,7 +170,7 @@ class ProjectTemplateController extends KleinController
         $count = ProjectTemplateDao::remove($id, $this->getUser()->uid);
 
         if ($count == 0) {
-            throw new NotFoundException('Model not found');
+            return $this->response->json(["error" => "Error: Template not found"], 404);
         }
 
         return $this->response->json([
