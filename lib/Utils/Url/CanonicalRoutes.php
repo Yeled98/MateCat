@@ -194,7 +194,7 @@ class CanonicalRoutes
 
         $project_name = Utils::friendlySlug($params['project_name']);
 
-        return $host . "/analyze/" . $project_name . "/" . $params['id_project'] . "-" . $params['password'];
+        return "/analyze/" . $project_name . "/" . $params['id_project'] . "-" . $params['password'];
     }
 
     /**
